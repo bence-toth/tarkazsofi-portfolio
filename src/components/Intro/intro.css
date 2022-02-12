@@ -11,6 +11,7 @@
 @media (max-width: 920px) {
   .intro {
     padding-top: 72px;
+    height: 100vh;
   }
 }
 
@@ -32,4 +33,42 @@ h2 {
   font-size: 2em;
   font-weight: normal;
   color: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .intro p {
+    padding-top: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .intro p {
+    padding-top: 1.25em;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  .intro p {
+    width: 100%;
+  }
 }
