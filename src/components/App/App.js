@@ -12,8 +12,11 @@ const App = () => {
 
   return (
     <div className="app">
-      <Menu contentSections={contentSections} contentWrapper={contentWrapper} />
       <main ref={contentRef}>
+        <Menu
+          contentSections={contentSections}
+          contentWrapper={contentWrapper}
+        />
         <Intro />
         <div>
           <section className="contentSection" data-menu-title="Experience">
