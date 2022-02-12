@@ -3,7 +3,7 @@ import portrait from "./portrait.png";
 import "./intro.css";
 
 const Intro = () => (
-  <header className="intro">
+  <header className="intro" data-menu-title="Intro">
     <div
       className="contentInnerWrapper"
       style={{

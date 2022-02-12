@@ -1,0 +1,49 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  background-color: var(--gray);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.5s;
+  z-index: 1;
+}
+
+.menu.hideShadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0);
+}
+
+.menuStructure {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.menuItems {
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.menuItem {
+  padding: 0.5em 1em;
+  border: 0;
+  border-bottom: 3px solid var(--lavender);
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.5s, color 0.5s;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.menuItem:hover,
+.menuItem.active {
+  border-bottom: 3px solid var(--pink);
+}
+
+.menuItem.active {
+  border-bottom: 3px solid var(--pink);
+  cursor: pointer;
+  color: var(--pink);
+}
