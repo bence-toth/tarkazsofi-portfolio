@@ -6,14 +6,18 @@ import Stripes from "./Stripes";
 
 import "./app.css";
 
-const App = () => {
+const useContentSections = () => {
   const [contentSections, setContentSections] = useState([]);
   const contentRef = useCallback((node) => {
-    const sections = [
-      ...node.querySelectorAll(".intro,.contentSection,.siteFooter"),
-    ];
+    const sections = [...node.querySelectorAll("[data-menu-title]")];
     setContentSections(sections);
   }, []);
+
+  return [contentSections, contentRef];
+};
+
+const App = () => {
+  const [contentSections, contentRef] = useContentSections();
 
   return (
     <div className="app">
