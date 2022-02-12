@@ -16,13 +16,15 @@ body {
   font-family: "Atkinson Hyperlegible", sans-serif;
   --black: hsl(228, 12%, 22%);
   --yellow: #ffc759ff;
-  --pink: #ff7b9cff;
-  --blue: #607196ff;
+  --pink: hsl(15, 75%, 66%);
+  --blue: rgb(96, 122, 150);
   --lavender: #babfd1ff;
   --gray: #e8e9edff;
 
   color: var(--black);
   font-size: 22px;
+
+  overflow: hidden;
 }
 
 button {

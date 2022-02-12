@@ -42,3 +42,9 @@
 .stripes > div:nth-child(5n + 4) {
   flex-grow: 2;
 }
+
+@media (max-width: 920px) {
+  .stripes > div:nth-child(n + 20) {
+    display: none;
+  }
+}

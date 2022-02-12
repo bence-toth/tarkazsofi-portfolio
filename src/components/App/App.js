@@ -8,11 +8,11 @@ import { useContentSections } from "./hooks";
 import "./app.css";
 
 const App = () => {
-  const [contentSections, contentRef] = useContentSections();
+  const [contentSections, contentWrapper, contentRef] = useContentSections();
 
   return (
     <div className="app">
-      <Menu contentSections={contentSections} />
+      <Menu contentSections={contentSections} contentWrapper={contentWrapper} />
       <main ref={contentRef}>
         <Intro />
         <div>
@@ -260,8 +260,8 @@ const App = () => {
           </section>
         </div>
         <Footer />
+        <Stripes />
       </main>
-      <Stripes />
     </div>
   );
 };

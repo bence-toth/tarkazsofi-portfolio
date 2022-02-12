@@ -24,6 +24,11 @@
   align-items: center;
 }
 
+.menuItems > li,
+.menuItems > li > button {
+  height: 100%;
+}
+
 .menuItem {
   padding: 0.5em 1em;
   border: 0;
@@ -39,11 +44,134 @@
 
 .menuItem:hover,
 .menuItem.active {
-  border-bottom: 3px solid var(--pink);
+  border-bottom: 3px solid var(--blue);
 }
 
 .menuItem.active {
   border-bottom: 3px solid var(--pink);
   cursor: pointer;
   color: var(--pink);
+}
+
+@media (max-width: 920px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menuButton {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--pink);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menuButton > div {
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: var(--blue);
+  border-radius: 48px;
+  opacity: 1;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.menuButton > div:nth-child(1) {
+  transform: translateY(-250%) rotate(0);
+}
+
+.menuButton > div:nth-child(2) {
+  transform: translateY(0) rotate(0);
+}
+
+.menuButton > div:nth-child(3) {
+  transform: translateY(250%) rotate(0);
+}
+
+.menuButton.open > div:nth-child(1) {
+  transform: translateY(0) rotate(225deg);
+}
+
+.menuButton.open > div:nth-child(2) {
+  opacity: 0;
+  transform: translateY(0) rotate(180deg);
+}
+
+.menuButton.open > div:nth-child(3) {
+  transform: translateY(0) rotate(140deg);
+}
+
+.menuCanvas {
+  position: fixed;
+  top: 36px;
+  left: 36px;
+  width: 0;
+  height: 0;
+  background-color: var(--lavender);
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+  border-radius: 50%;
+}
+
+.menuCanvas.open {
+  width: 283vmax;
+  height: 283vmax;
+}
+
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity;
+  transition-duration: 0.25s;
+  transition-delay: 0s;
+}
+
+.mobileMenu.open {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.25s;
+  transition-duration: 0.5s;
+}
+
+.mobileMenu > nav {
+  height: 100%;
+}
+
+.mobileMenuInnerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMenuInnerWrapper ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.mobileMenuInnerWrapper button {
+  width: 100%;
+  border-bottom-color: transparent;
+  font-size: 2vmax;
+}
+
+@media (min-width: 921px) {
+  .menuButton,
+  .menuCanvas,
+  .mobileMenu {
+    display: none;
+  }
 }
