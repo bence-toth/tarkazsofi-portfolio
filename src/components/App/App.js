@@ -1,20 +1,11 @@
-import { useCallback, useState } from "react";
-import Menu from "./Menu";
-import Intro from "./Intro";
-import Footer from "./Footer";
-import Stripes from "./Stripes";
+import Menu from "../Menu/Menu";
+import Intro from "../Intro/Intro";
+import Footer from "../Footer/Footer";
+import Stripes from "../Stripes/Stripes";
+
+import { useContentSections } from "./hooks";
 
 import "./app.css";
-
-const useContentSections = () => {
-  const [contentSections, setContentSections] = useState([]);
-  const contentRef = useCallback((node) => {
-    const sections = [...node.querySelectorAll("[data-menu-title]")];
-    setContentSections(sections);
-  }, []);
-
-  return [contentSections, contentRef];
-};
 
 const App = () => {
   const [contentSections, contentRef] = useContentSections();
