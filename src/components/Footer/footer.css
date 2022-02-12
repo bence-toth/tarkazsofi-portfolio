@@ -1,3 +1,20 @@
 .siteFooter {
   background-color: var(--gray);
 }
+
+.contactList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 24px;
+}
+
+.contactList li {
+  display: flex;
+  line-height: 36px;
+}
+
+.contactList img {
+  width: 36px;
+}

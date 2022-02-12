@@ -1,8 +1,7 @@
 .intro {
-  padding-top: 6em;
   background-color: var(--gray);
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 92px);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 60% auto;
