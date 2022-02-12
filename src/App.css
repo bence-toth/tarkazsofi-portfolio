@@ -93,38 +93,11 @@
   color: var(--pink);
 }
 
-.intro {
-  height: 100vh;
-  padding-top: 6em;
-  background-color: var(--gray);
-  position: relative;
-}
-
-.intro .contentInnerWrapper {
+.contentInnerWrapper {
   height: 100%;
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 60% auto;
-}
-
-.intro p {
-  width: 50%;
-  padding-top: 3em;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 4em;
-}
-
-h1 .name {
-  color: var(--pink);
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: normal;
-  color: var(--blue);
 }
 
 .contentSection {
@@ -132,7 +105,6 @@ h2 {
   min-height: 100vh;
 }
 
-.intro,
 .contentSection,
 .siteFooter {
   box-shadow: 0 -20em 10em -10em inset hsla(0, 0%, 0%, 15%);
