@@ -44,7 +44,3 @@ h3 {
 .contentSection:nth-child(4n + 3) {
   background-color: var(--yellow);
 }
-
-.siteFooter {
-  background-color: var(--gray);
-}

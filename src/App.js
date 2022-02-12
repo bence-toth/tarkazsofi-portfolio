@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
 import Menu from "./Menu";
 import Intro from "./Intro";
+import Footer from "./Footer";
 import Stripes from "./Stripes";
 
 import "./app.css";
@@ -263,12 +264,7 @@ const App = () => {
             </div>
           </section>
         </div>
-        <footer className="siteFooter" data-menu-title="Contact me">
-          <div className="contentInnerWrapper">
-            <h3>Contact me</h3>
-            <p>Contact info etc. will come here</p>
-          </div>
-        </footer>
+        <Footer />
       </main>
       <Stripes />
     </div>
