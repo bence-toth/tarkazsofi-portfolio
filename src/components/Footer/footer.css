@@ -18,3 +18,45 @@
 .contactList img {
   width: 36px;
 }
+
+@media (max-width: 1024px) {
+  .contactList {
+    gap: 0;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 24px auto 0;
+  }
+
+  .contactList li {
+    width: 50%;
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactList li:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .contactList li:nth-child(even) .value {
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactList {
+    gap: 12px;
+  }
+
+  .contactList li {
+    width: 100%;
+  }
+
+  .contactList li:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .contactList li:nth-child(even) .value {
+    text-align: left;
+  }
+}

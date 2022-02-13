@@ -48,3 +48,12 @@ body {
 button {
   font-family: inherit;
 }
+
+a {
+  color: var(--blue);
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
