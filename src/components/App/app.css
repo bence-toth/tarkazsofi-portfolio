@@ -27,7 +27,7 @@ main {
 
 .contentSection,
 .siteFooter {
-  box-shadow: 0 -20em 10em -10em inset hsla(0, 0%, 0%, 15%);
+  box-shadow: 0 20em 10em -10em inset hsla(0, 0%, 0%, 15%);
 }
 
 h3 {
