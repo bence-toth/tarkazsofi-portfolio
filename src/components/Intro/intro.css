@@ -1,5 +1,5 @@
 .intro {
-  background-color: var(--gray);
+  background-color: var(--gray-bright);
   position: relative;
   height: calc(100vh - 92px);
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@
 
 h1 {
   font-size: 4em;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 h1 .name {
@@ -33,6 +34,7 @@ h2 {
   font-size: 2em;
   font-weight: normal;
   color: var(--blue);
+  /* font-family: "Atkinson Hyperlegible", sans-serif; */
 }
 
 @media (max-width: 1024px) {

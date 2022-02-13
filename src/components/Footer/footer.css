@@ -1,5 +1,6 @@
 .siteFooter {
-  background-color: var(--gray);
+  border-top: 2px solid var(--gray);
+  background-color: var(--gray-bright);
 }
 
 .contactList {
@@ -8,11 +9,13 @@
   justify-content: center;
   gap: 36px;
   margin-top: 24px;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 .contactList li {
   display: flex;
   line-height: 36px;
+  gap: 4px;
 }
 
 .contactList img {

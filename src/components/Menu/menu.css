@@ -2,11 +2,12 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--gray);
+  background-color: var(--gray-bright);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transition: box-shadow 0.5s;
   z-index: 1;
   height: 92px;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 .menu.hideShadow {
@@ -34,7 +35,7 @@
 .menuItem {
   padding: 0.5em 1em;
   border: 0;
-  border-bottom: 3px solid var(--lavender);
+  border-bottom: 3px solid var(--lavender-bright);
   background-color: transparent;
   cursor: pointer;
   transition: border-color 0.5s, color 0.5s;
@@ -117,7 +118,7 @@
   left: 36px;
   width: 0;
   height: 0;
-  background-color: var(--lavender);
+  background-color: var(--lavender-bright);
   z-index: 1;
   transform: translate(-50%, -50%);
   transition: width 0.5s, height 0.5s;
@@ -138,6 +139,7 @@
   transition: opacity;
   transition-duration: 0.25s;
   transition-delay: 0s;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 .mobileMenu.open {

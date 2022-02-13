@@ -27,11 +27,12 @@ main {
 
 .contentSection,
 .siteFooter {
-  box-shadow: 0 20em 10em -10em inset hsla(0, 0%, 0%, 15%);
+  box-shadow: 0 20em 10em -10em inset hsla(0, 0%, 0%, 10%);
 }
 
 h3 {
   font-size: 2em;
+  border-bottom: 2px solid var(--black);
 }
 
 .contentSection p {
@@ -46,17 +47,21 @@ h3 {
 }
 
 .contentSection:nth-child(4n) {
-  background-color: var(--blue);
+  border-top: 2px solid var(--blue);
+  background-color: var(--blue-bright);
 }
 
 .contentSection:nth-child(4n + 1) {
-  background-color: var(--pink);
+  border-top: 2px solid var(--pink);
+  background-color: var(--pink-bright);
 }
 
 .contentSection:nth-child(4n + 2) {
-  background-color: var(--lavender);
+  border-top: 2px solid var(--lavender);
+  background-color: var(--lavender-bright);
 }
 
 .contentSection:nth-child(4n + 3) {
-  background-color: var(--yellow);
+  border-top: 2px solid var(--yellow);
+  background-color: var(--yellow-bright);
 }

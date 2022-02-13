@@ -24,7 +24,7 @@
   background-color: var(--blue);
 }
 .stripes > div:nth-child(4n + 3) {
-  background-color: var(--lavender);
+  background-color: var(--lavender-bright);
 }
 
 .stripes > div:nth-child(5n) {
