@@ -19,13 +19,13 @@ body {
   --black: hsl(228, 12%, 22%);
 
   --yellow: hsl(40, 100%, 67%);
-  --pink: hsl(15, 75%, 66%);
+  --peach: hsl(15, 75%, 66%);
   --blue: hsl(211, 22%, 48%);
   --lavender: hsl(227, 20%, 50%);
   --gray: hsl(228, 5%, 45%);
 
   --yellow-bright: hsl(40, 100%, 90%);
-  --pink-bright: hsl(15, 75%, 85%);
+  --peach-bright: hsl(15, 75%, 85%);
   --blue-bright: hsl(211, 22%, 80%);
   --lavender-bright: hsl(227, 20%, 77%);
   --gray-bright: hsl(228, 12%, 92%);

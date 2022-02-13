@@ -47,21 +47,21 @@ h3 {
 }
 
 .contentSection:nth-child(4n) {
-  border-top: 2px solid var(--blue);
+  border-top: 5px solid var(--blue);
   background-color: var(--blue-bright);
 }
 
 .contentSection:nth-child(4n + 1) {
-  border-top: 2px solid var(--pink);
-  background-color: var(--pink-bright);
+  border-top: 5px solid var(--peach);
+  background-color: var(--peach-bright);
 }
 
 .contentSection:nth-child(4n + 2) {
-  border-top: 2px solid var(--lavender);
+  border-top: 5px solid var(--lavender);
   background-color: var(--lavender-bright);
 }
 
 .contentSection:nth-child(4n + 3) {
-  border-top: 2px solid var(--yellow);
+  border-top: 5px solid var(--yellow);
   background-color: var(--yellow-bright);
 }
